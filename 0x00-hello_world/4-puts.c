@@ -3,7 +3,7 @@
 /**
   * main - prints "Programming is like building a multilingual puzzle
   *
-  * return:  0 Success
+  * return: Success
   */
 int main(void)
 {
