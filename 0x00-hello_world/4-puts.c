@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point
+  * main - Prints "Programming is like building a multilingual puzzle
   *
-  * return: Always 0 (Success)
+  * return: Zero(0) for Success
   */
 int main(void)
 {
