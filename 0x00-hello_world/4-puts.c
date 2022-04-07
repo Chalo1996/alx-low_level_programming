@@ -3,7 +3,7 @@
 /**
   * main - prints "Programming is like building a multilingual puzzle
   *
-  * return:  Which is the C default return value
+  * return:  Which is the C default return value meaning(Success)
   */
 int main(void)
 {
