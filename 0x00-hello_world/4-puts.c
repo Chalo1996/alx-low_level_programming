@@ -1,6 +1,3 @@
-#!/bin/bash
-gcc puts.c -o puts
-
 #include <stdio.h>
 
 int main(void)
