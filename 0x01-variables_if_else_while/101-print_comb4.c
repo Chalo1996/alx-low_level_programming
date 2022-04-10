@@ -7,18 +7,18 @@
   */
 int main(void)
 {
-	int i, j = 1, k = 2;
+	int i = '0', j = '1', k = '2';
 
-	for (i = 0; i <= 8; i++)
+	for (; i <= '7'; i++)
 	{
-		for (; j <= 9; j++)
+		for (; j <= '8'; j++)
 		{
-			for (;  k <= 9; k++)
+			for (; k <= '9'; k++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (i != 7 || k != 9)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (i != '7' || j != '8' || k != '9')
 				{
 					putchar(',');
 					putchar(' ');
