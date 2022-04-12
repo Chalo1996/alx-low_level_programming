@@ -1,12 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
-  * main - Entry point for C code.
+  * main - Entry point for C code
   *
-  * Return: Success(0).
+  * Return: Zero(Exit success).
   */
-int main(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
