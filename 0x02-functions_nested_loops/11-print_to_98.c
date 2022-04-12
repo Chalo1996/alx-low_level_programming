@@ -8,12 +8,8 @@
   */
 void print_to_98(int n)
 {
-	int i = n;
-	
-	while (i <= 98)
-	{
-		_putchar(i);
-		i++;
-	}
-	return (i);
+	int i;
+
+	for (i = n; i <= 98; i++)
+		return (i);
 }
