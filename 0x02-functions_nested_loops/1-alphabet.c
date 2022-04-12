@@ -1,8 +1,17 @@
-#include <stdio.h>
-#include "1-main.h"
+#include "main.h"
 
 /**
   * print_alphabet - Prints the alphabets in lowercase.
   *
-  * Return: Null. No value returned.
   */
+void print_alphabet(void)
+{
+        int c = 97;
+
+        do {
+                putchar(c);
+                c++;
+        } while (c <= 122);
+        putchar('\n');
+	return;
+}
