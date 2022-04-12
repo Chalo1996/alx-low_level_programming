@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * 6-abs.c - computes the absolute value of an integer.
+  * _abs - computes the absolute value of an integer.
   * @n: first parameter.
   *
   * Return: The absolute value.
@@ -13,7 +13,7 @@ int _abs(int n)
 
 	num = abs(n);
 
-	_putchar(num);
+	_putchar(num + '0');
 
 	return (num);
 }
