@@ -4,12 +4,12 @@
   */
 int print_sign(int n)
 {
-	if (c >= '0' && c <='9')
+	if (n >= '0' && n <='9')
 	{
 		return (1);
 		_putchar('+');
 	}
-	else if (c == '0')
+	else if (n == '0')
 	{
 		return (0);
 		_putchar('0');
