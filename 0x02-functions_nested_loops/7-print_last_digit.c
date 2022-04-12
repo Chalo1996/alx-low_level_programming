@@ -7,8 +7,9 @@
   *
   * Return: The value of the last digit.
   */
-int print_last_digit(int n, int ld)
+int print_last_digit(int n)
 {
+	int ld;
 	ld = n % 10;
 
 	_putchar(ld);
