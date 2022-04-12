@@ -3,11 +3,12 @@
 /**
   * _islower - check whether a character is lower or not.
   *
-  * Return: Zero(Success).
+  * Return: 1(False).
+  * Return: Zero(True).
   */
 int _islower(int c)
 {
-	if (islower(c))
+	if (c >='a' && c <= 'z')
 		return (1);
 	else
 		return (0);
