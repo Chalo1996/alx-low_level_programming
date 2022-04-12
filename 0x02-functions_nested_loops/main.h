@@ -1,9 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
-int main(void)
-{
-	puts("_putchar");
-	return (0);
-}
+#include <stdio.h>
+
+int main(void);
+void print_alphabet(void);
 
 #endif
