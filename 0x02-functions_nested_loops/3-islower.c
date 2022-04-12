@@ -7,10 +7,12 @@
   */
 int _islower(int c)
 {
-	if (islower(c))
-		putchar('1');
+	int r;
+
+	if (islower(r))
+		putchar('49');
 	else
-		putchar('0');
+		putchar('48');
 	putchar('\n');
 	return (0);
 }
