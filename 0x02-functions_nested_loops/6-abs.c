@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+  * 6-abs.c - computes the absolute value of an integer.
+  * @n: first parameter.
+  *
+  * Return: The absolute value.
+  */
+int _abs(int n)
+{
+	int num;
+
+	num = abs(n);
+
+	_putchar(num);
+
+	return (num);
+}
