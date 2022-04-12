@@ -10,9 +10,9 @@ int _islower(int c)
 	int r;
 
 	if (islower(r))
-		putchar('49');
+		_putchar('1');
 	else
-		putchar('48');
+		_putchar('0');
 	putchar('\n');
 	return (0);
 }
