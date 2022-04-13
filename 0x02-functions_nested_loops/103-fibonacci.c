@@ -13,17 +13,17 @@ int main(void)
 
 	while (1)
 	{
-		fibsum = fib1 + fib2;
+		sumOffib = fib1 + fib2;
 		if (sumOffib > 4000000)
 			break;
 
-		if ((sumOfffib % 2) == 0)
+		if ((sumOffib % 2) == 0)
 			sum += sumOffib;
 
 		fib1 = fib2;
 		fib2 = sumOffib;
 	}
-	printf("%.0f\n", sum);
+	printf("%f\n", sum);
 
 	return (0);
 }
