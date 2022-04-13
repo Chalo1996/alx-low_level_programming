@@ -12,5 +12,5 @@ void print_alphabet(void)
 		_putchar(c);
 		c++;
 	} while (c <= 122);
-	putchar('\n');
+	_putchar('\n');
 }
