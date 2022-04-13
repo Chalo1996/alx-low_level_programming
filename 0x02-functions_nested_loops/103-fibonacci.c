@@ -17,8 +17,8 @@ int main(void)
 		if (sumOffib > 4000000)
 			break;
 
-		if ((fibsum % 2) == 0)
-			tot_sum += sumOffib;
+		if ((sumOfffib % 2) == 0)
+			sum += sumOffib;
 
 		fib1 = fib2;
 		fib2 = sumOffib;
