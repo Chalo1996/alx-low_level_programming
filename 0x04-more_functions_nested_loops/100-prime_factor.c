@@ -27,7 +27,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d", max);
-	putchar('\n');
+	printf("%d\n", max);
 	return (0);
 }
