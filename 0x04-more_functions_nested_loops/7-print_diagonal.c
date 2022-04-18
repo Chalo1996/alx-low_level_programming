@@ -9,6 +9,10 @@ void print_diagonal(int n)
 {
 	int rowNum, spaces;
 
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
 	for (rowNum = 1; rowNum <= n; rowNum++)
 	{
 		for (spaces = 1; spaces <= (rowNum - 1); spaces++)
