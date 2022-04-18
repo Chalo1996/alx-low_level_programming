@@ -5,7 +5,6 @@
   *
   * Return: 0.
   */
-
 int main(void)
 {
 	long long n = 612852475143;
