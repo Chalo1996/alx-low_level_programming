@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int n = 612852475143;
+	unsigned int n = 612852475143;
 	int i = 2;
 	int max = 0;
 	
@@ -27,6 +27,7 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d\n", max);
+	printf("%d", max);
+	putchar('\n');
 	return (0);
 }
