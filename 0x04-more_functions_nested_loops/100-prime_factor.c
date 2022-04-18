@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long  n = 612852475143;
+	long long n = 612852475143;
 	int i = 2;
 	int max = 0;
 	
