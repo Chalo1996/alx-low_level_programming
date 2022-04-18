@@ -22,7 +22,6 @@ int main(void)
 				{
 					max = i;
 				}
-				/* printf("%d\n", i); */
 				n = n / i;
 			}
 		}
