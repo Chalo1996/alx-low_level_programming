@@ -14,7 +14,7 @@ int main(int fib)
 
 	for (fib = 1; fib <= 98; fib++)
 	{
-		printf("%ld", fib1);
+		printf("%lu", fib1);
 		
 		if (fib != 98)
 		{
