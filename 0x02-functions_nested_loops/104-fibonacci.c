@@ -9,7 +9,7 @@
   */
 int main(int fib)
 {
-	int  fib1 = 1, fib2 = 1, swap; 
+	unsigned long int  fib1 = 1, fib2 = 1, swap; 
 
 
 	for (fib = 1; fib <= 98; fib++)
