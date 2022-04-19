@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
+#include <stdlib.h>
 
 char _putchar(char c)
 int main(void);
@@ -14,8 +16,6 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
-int main(void);
-int main(void);
 int main(long int  fib);
 
 #endif
