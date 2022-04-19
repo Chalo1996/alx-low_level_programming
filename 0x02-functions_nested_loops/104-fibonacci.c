@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
   * main - prints the first 100 fibonacci numbers.
