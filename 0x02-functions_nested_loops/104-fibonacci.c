@@ -7,9 +7,9 @@
   *
   * Return: 0.
   */
-int main(long int  fib)
+int main(int fib)
 {
-	long int  fib1 = 1, fib2 = 1, swap; 
+	int  fib1 = 1, fib2 = 1, swap; 
 
 
 	for (fib = 1; fib <= 98; fib++)
