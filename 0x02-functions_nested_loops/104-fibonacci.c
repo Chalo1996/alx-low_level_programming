@@ -6,14 +6,14 @@
   *
   * Return: 0.
   */
-int main(long long int  fib)
+int main(long int  fib)
 {
-	long long int  fib1 = 1, fib2 = 1, swap; 
+	long int  fib1 = 1, fib2 = 1, swap; 
 
 
 	for (fib = 1; fib <= 98; fib++)
 	{
-		printf("%lld", fib1);
+		printf("%ld", fib1);
 		
 		if (fib != 98)
 		{
