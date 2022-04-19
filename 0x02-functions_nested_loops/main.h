@@ -18,4 +18,4 @@ int main(void);
 int main(void);
 int main(long int  fib);
 
-#endif /* MAIN_H */
+#endif
