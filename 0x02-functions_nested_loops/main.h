@@ -15,6 +15,5 @@ void times_table(void);
 int add(int one, int two);
 void print_to_98(int n);
 void print_times_table(int n);
-int main(long int  fib);
 
 #endif /* MAIN_H */
