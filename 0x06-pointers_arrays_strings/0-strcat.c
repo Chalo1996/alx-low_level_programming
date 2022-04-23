@@ -2,12 +2,11 @@
 
 /**
   * _strcat - concatenates src to dest.
-  * @dest: string to append to(destination).
-  * @src: string to append(source).
+  * @dest: string to append to (destination).
+  * @src: string to be appended (source).
   *
   * Return: dest(The concatenated string).
   */
-
 char *_strcat(char *dest, char *src)
 {
 	int i, j, k, len_dest = 0, len_src = 0, total_len;
