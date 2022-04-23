@@ -2,8 +2,8 @@
 
 /**
   * _strcat - concatenates src to dest.
-  * @dest: string to append to.
-  * @src: string to append.
+  * @dest: string to append to(destination).
+  * @src: string to append(source).
   *
   * Return: desk(The concatenated string).
   */
