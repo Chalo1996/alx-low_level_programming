@@ -5,7 +5,7 @@
   * @dest: string to append to(destination).
   * @src: string to append(source).
   *
-  * Return: desk(The concatenated string).
+  * Return: dest(The concatenated string).
   */
 
 char *_strcat(char *dest, char *src)
