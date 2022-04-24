@@ -1,6 +1,11 @@
 #include "main.h"
 
 /**
+  * _strcmp - Compares string(s1) to string(s2).
+  * @s1: first string to compare.
+  * @s2: second string to compare.
+  *
+  * Return: 0 if equal, 1 if s1 < s2 otherwise -1.
   */
 int _strcmp(char *s1, char *s2)
 {
@@ -21,7 +26,7 @@ int _strcmp(char *s1, char *s2)
 		return (0);
 	}
 
-	else if((len_s1) > (len_s2))
+	else if (len_s1 > len_s2)
 	{
 		return (1);
 	}
