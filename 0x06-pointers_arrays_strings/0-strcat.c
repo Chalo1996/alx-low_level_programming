@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	{
 		len_src++;
 	}
-	total_len = (len_dest + len_src) + 2;
+	total_len = (len_dest + len_src) + 3;
 
 	for (k = 0; k <= total_len; k++)
 	{
