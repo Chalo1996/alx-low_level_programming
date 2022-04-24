@@ -5,34 +5,28 @@
   * @s1: first string to compare.
   * @s2: second string to compare.
   *
-  * Return: 0 if equal, 1 if s1 < s2 otherwise -1.
+  * Return: The ascii equivalent difference between the strings.
   */
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, len_s1 = 0, len_s2 = 0;
+	int i;
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
-		len_s1++;
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+
+		if (s2[i] == '\0')
+		{
+			return (s2[i]);
+		}
+	}
+	if (s2[i] != '\0')
+	{
+		return (0 - s2[i]);
 	}
 
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-		len_s2++;
-	}
-
-	if (len_s1 == len_s2)
-	{
-		return (0);
-	}
-
-	else if (len_s1 > len_s2)
-	{
-		return (15);
-	}
-
-	else
-	{
-		return (-15);
-	}
+	return (0);
 }
