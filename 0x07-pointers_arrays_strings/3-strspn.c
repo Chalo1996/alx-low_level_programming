@@ -21,9 +21,9 @@ unsigned int _strspn(char *s, char *accept)
 		len++;
 	}
 
-	for (j = 0; j <= len_str; j++)
+	for (j = 0; j < len_str; j++)
 	{
-		for (l = 0; l <= len - 1; l++)
+		for (l = 0; l < len; l++)
 		{
 			if (s[j] == accept[l])
 				break;
