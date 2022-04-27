@@ -1,5 +1,5 @@
 **Project 7. Even More Pointers, Arrays and Strings**
-~*Contents and Description
+~*Contents and Description<br>
 
 
 | FILE                 | DESCRIPTION                                      |
