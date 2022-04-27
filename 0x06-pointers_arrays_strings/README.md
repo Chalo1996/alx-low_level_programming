@@ -1,9 +1,9 @@
  **0x06. C - More pointers, arrays and strings**</br>
 
- ~*Practicing more pointers and arrays*~:</br>
+ Practicing more pointers and arrays:</br>
 
-   |**FILE**             | **DESCRIPTION**                                                                                                                  |
-   ----------------------------------------------------------------------------------------------------------------------------------------------------------
+   |FILE                 | DESCRIPTION                                                                                                                      |
+   | --------------------| :-------------------------------------------------------------------------------------------------------------------------------:|
    | 0-strcat.c:         | appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest,                        |
    |                     | and then adds a terminating null byte. Returns a pointer to the resulting string dest.                                           |    
    | 1-strncat.c         | The _strncat function is similar to the _strcat function, except that it will use at most n bytes from src;                      |
@@ -17,4 +17,3 @@
    | 8-rot13.c           | function that encodes a string using rot13.                                                                                      |
    | 100-print_number.c  | function that prints an integer.                                                                                                 |
    | 101-magic.c:        | prints a[2] = 98.                                                                                                                |
-   ----------------------------------------------------------------------------------------------------------------------------------------------------------
