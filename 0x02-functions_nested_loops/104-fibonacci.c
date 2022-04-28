@@ -1,31 +1,41 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-  * main - prints the first 100 fibonacci numbers.
-  * @fib: The total number to be printed.
+  * fibb - recurssively return fibonacci numbers.
+  * @i: the fibonacci number.
   *
-  * Return: 0.
+  * Return: The fibonacci number.
   */
-int main(int fib)
+int fibb(unsigned int i)
 {
-	unsigned long int  fib1 = 1, fib2 = 1, swap; 
+	if (i == 1)
+		return (1);
 
+	if (i == 2)
+		return (2);
 
-	for (fib = 1; fib <= 98; fib++)
+	return (fibb(i -1) + fibb(i - 2));
+}
+
+/**
+  * main - print fibonacci numbers between 1 and 98.
+  * 
+  * Return: Zero.
+  */
+int main(void)
+{
+	int i, f;
+
+	for (i = 1; i <= 98; i++)
 	{
-		printf("%lu", fib1);
-		
-		if (fib != 98)
+		f = fibb(i);
+		printf("%d", f);
+		if (i != 98)
 		{
 			printf(",");
 			printf(" ");
 		}
-		swap = fib1 + fib2;
-		fib1 = fib2;
-		fib2 = swap;
 	}
-
 	printf("\n");
 	return (0);
 }
