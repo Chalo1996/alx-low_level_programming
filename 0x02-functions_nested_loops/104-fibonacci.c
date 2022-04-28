@@ -14,12 +14,12 @@ int fibb(unsigned int i)
 	if (i == 2)
 		return (2);
 
-	return (fibb(i -1) + fibb(i - 2));
+	return (fibb(i - 1) + fibb(i - 2));
 }
 
 /**
   * main - print fibonacci numbers between 1 and 98.
-  * 
+  *
   * Return: Zero.
   */
 int main(void)
