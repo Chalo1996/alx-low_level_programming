@@ -11,3 +11,4 @@ Sixth project: 0x05-pointers_arrays_strings</br>
 Seventh project: 0x06-pointers_arrays_strings</br>
 Eighth project: 0x07-pointers_arrays_strings</br>
 Nineth project: 0x08-recursion</br>
+Tenth project: 0x09-static_libraries</br>
