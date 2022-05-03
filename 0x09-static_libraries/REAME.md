@@ -1,4 +1,6 @@
-**STATIC LIBRARIES**
+**STATIC LIBRARIES**</br>
+
+File Description:</br>
 
 main.h is a header file containing all function prototypes.</br>
 libmy.a is a static library containing all functions in the header file.</br>
