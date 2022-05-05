@@ -34,18 +34,19 @@ char *str_concat(char *s1, char *s2)
 
 	ptr = (char *)malloc(len_tot * sizeof(char));
 
-	if (ptr == NULL)
-		return (NULL);
-
-	for (l = 0; l < len_s1; l++)
+	if (ptr)
 	{
-		*(ptr + l) = *(s1 + l);
-	}
-	for (l = 0; l < len_s2; l++)
-	{
-		ptr[len_s1 + l] = s2[l];
-	}
-	ptr[len_tot - 1] = '\0';
+		for (l = 0; l < len_s1; l++)
+		{
+			*(ptr + l) = *(s1 + l);
+		}
+		for (l = 0; l < len_s2; l++)
+		{
+			ptr[len_s1 + l] = s2[l];
+		}
+		ptr[len_tot - 1] = '\0';
 
-	return (ptr);
+		return (ptr);
+	}
+	return NULL;
 }
