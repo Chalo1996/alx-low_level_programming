@@ -17,19 +17,19 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (a = 1 ; a < ac ; a++)
+	for (a = 0 ; a < ac ; a++)
 	{
 		for (i = 0 ; av[a][i] ; i++)
 			len++;
 	}
 	len += ac;
 
-	ptr = malloc((len + 10) * sizeof(char) + 1);
+	ptr = malloc(len  * sizeof(char) + 1);
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (a = 1 ; a < ac ; a++)
+	for (a = 0 ; a < ac ; a++)
 	{
 		for (i = 0 ; av[a][i] ; i++)
 		{
