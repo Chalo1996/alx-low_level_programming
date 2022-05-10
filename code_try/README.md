@@ -14,3 +14,5 @@
           starting with first column.
 
 2-triangle.c: prints a spaced triangle.
+
+fibocci.c prints the fibonacci series by recursion.
