@@ -13,30 +13,40 @@
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	int len_name = 0, len_owner = 0, i, j, k, l;
 	dog_t *p;
 
 	p = malloc(sizeof(struct dog));
-
 	if (p == NULL)
 		return (NULL);
 
-	if (name == NULL)
+	for (i = 0; name[i] != '\0'; i++)
+		len_name++;
+
+	for (j = 0; owner[j] != '\0'; j++)
+		len_owner++;
+	
+	p->name = malloc(len_name * sizeof(char));
+	if (p->name == NULL)
 	{
 		free(p);
-		free(owner);
 		return (NULL);
 	}
 
-	if (owner == NULL)
-	{
-		free(p);
-		free(name);
-		return (NULL);
-	}
+	for (k = 0; k < len_name; k++)
+		p->name[k] = name[k];
 
-	p->name = name;
 	p->age = age;
-	p->owner = owner;
+
+	p->owner = malloc(sizeof(char) * len_owner);
+	if (p->owner == NULL)
+	{
+		free(p->name);
+		free(p);
+		return (NULL);
+	}
+	for (l = 0; l < len_owner; l++)
+		p->owner[l] = owner[i];
 
 	return (p);
 }
