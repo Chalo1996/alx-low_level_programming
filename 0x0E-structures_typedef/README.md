@@ -1,1 +1,3 @@
-typedef
+Structures</br>
+   and</br>
+#typedef
