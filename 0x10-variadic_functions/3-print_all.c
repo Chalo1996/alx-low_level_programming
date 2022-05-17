@@ -8,7 +8,7 @@
   */
 void print_all(const char * const format, ...)
 {
-	int i, len_format = 0;
+	int i = 0, len_format = 0;
 	char *str;
 
 	va_list args;
@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	while (format[len_format])
 		len_format++;
 
-	for (i = 0; i < len_format; i++)
+	while (i < len_format)
 	{
 		switch (format[i])
 		{
@@ -43,6 +43,8 @@ void print_all(const char * const format, ...)
 		}
 		if (i < (len_format - 1))
 			printf(", ");
+
+		i++;
 	}
 	printf("\n");
 	va_end(args);
