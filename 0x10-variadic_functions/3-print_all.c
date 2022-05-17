@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	while (format[len_format])
 		len_format++;
 
-	while (format && format[i] != '\0')
+	while (i < len_format)
 	{
 		switch (format[i])
 		{
@@ -32,10 +32,10 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(args, char *);
-				if (str == NULL)
-					printf("(nil)");
-				printf("%s", str);
-
+				if (str)
+					printf("%s", str);
+					break;
+				printf("(nil)");
 				break;
 			default:
 				i++;
