@@ -10,7 +10,6 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, len_format = 0;
 	char *str;
-
 	va_list args;
 
 	va_start(args, format);
@@ -39,12 +38,12 @@ void print_all(const char * const format, ...)
 
 				break;
 			default:
+				i++;
 				continue;
 		}
 		if (i < (len_format - 1))
 			printf(", ");
-
-		i++;
+	i++;
 	}
 	printf("\n");
 	va_end(args);
