@@ -1,6 +1,6 @@
-**Low Level Programming with C** </br>
+Low Level Programming with C</br>
 
-**ALX LOW LEVEL PROGRAMMING**</br>
+ALX LOW LEVEL PROGRAMMING</br>
 
 First Project: 0x00-hello_world</br>
 Second project: 0x01-variables_if_else_while</br>
@@ -16,4 +16,6 @@ Eleventh project: 0x0A-argc_argv</br>
 Twelveth project: 0x0B-malloc_free</br>
 Thirteenth project: 0x0C-more_malloc_free</br>
 Fourteenth project: 0x0D-preprocessor</br>
-Fifteenth project: 0x0E-structures_typedef<br>
+Fifteenth project: 0x0E-structures_typedef</br>
+Sixteenth project: 0x0F-function_pointers</br>
+Seventeenth project: 0x10-variadic_functions<br>
