@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 		}
 		if (i < (len_format - 1))
 			printf(", ");
-	i++;
+		i++;
 	}
 	printf("\n");
 	va_end(args);
