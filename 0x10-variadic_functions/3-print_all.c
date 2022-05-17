@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	while (format[len_format])
 		len_format++;
 
-	while (i < len_format)
+	while (format && format[i] != '\0')
 	{
 		switch (format[i])
 		{
