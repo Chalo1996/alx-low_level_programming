@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAXSIZE 16
-
 /**
   * print_listint_safe - print lists with a loop.
   * @head: poniter the head node
@@ -13,7 +11,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	unsigned int lsize = 0, i;
-	const listint_t *ptr[MAXSIZE];
+	const listint_t *ptr[200];
 	void *p = (void *)head;
 
 	if (!head)
