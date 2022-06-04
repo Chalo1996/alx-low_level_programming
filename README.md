@@ -19,3 +19,8 @@ Fourteenth project: 0x0D-preprocessor</br>
 Fifteenth project: 0x0E-structures_typedef</br>
 Sixteenth project: 0x0F-function_pointers</br>
 Seventeenth project: 0x10-variadic_functions<br>
+Eighteenth project: 0x12-singly_linked_lists</br>
+Nineteenth project: 0x13-more_singly_linked_lists</br>
+Twentieth project: 0x14-bit_manipulation</br>
+Twenty first project: 0x14-bit_manipulation</br>
+Twenty second project: 0x15-file_io</br>
