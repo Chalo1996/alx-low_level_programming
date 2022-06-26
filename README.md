@@ -24,3 +24,5 @@ Nineteenth project: 0x13-more_singly_linked_lists</br>
 Twentieth project: 0x14-bit_manipulation</br>
 Twenty first project: 0x14-bit_manipulation</br>
 Twenty second project: 0x15-file_io</br>
+Printf</br>
+The Shell Project</br>
