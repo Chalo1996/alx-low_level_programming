@@ -1,0 +1,31 @@
+#Usage:
+#all #build object c_code
+#object #build the executable
+#CC #gcc recursive expanded variable
+#SRC #All c files: main.c school.c
+#OBJ #Object files
+#NAME #executable
+#make target_name. #Example: make clean
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+%.o: %.c m.h
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
