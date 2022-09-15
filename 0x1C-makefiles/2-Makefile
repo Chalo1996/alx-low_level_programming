@@ -1,0 +1,20 @@
+#Usage:
+#all #build object c_code
+#object #build the executable
+#CC #gcc recursive expanded variable
+#SRC #All c files: main.c school.c
+#OBJ #Object files
+#NAME #executable
+
+CC = gcc
+SRC = school.c main.c
+OBJ = school.o main.o
+NAME = school
+
+all: object c_code
+
+object: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+c_code: $(SRC)
+	$(CC) -c $(SRC)
