@@ -1,0 +1,11 @@
+#Usage:
+#all #build object c_code
+#object #build the executable
+
+all: object c_code
+
+object: school.o
+	gcc -o school school.o main.c
+
+c_code: school.c
+	gcc -c school.c
