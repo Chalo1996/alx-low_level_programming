@@ -8,13 +8,11 @@
 
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:%.c=%.o)
 NAME = school
 
-all: main
+%.o: %.c m.h
+	$(CC) -c -o $@ $<
 
-main: $(OBJ)
-	$(CC) main.o school.o -o $(NAME)
-
-c_code: $(SRC)
-	$(CC) -c $(SRC)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
