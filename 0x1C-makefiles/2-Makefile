@@ -6,15 +6,17 @@
 #OBJ #Object files
 #NAME #executable
 
+.PHONY := all main
+
 CC = gcc
-SRC = school.c main.c
-OBJ = school.o main.o
+SRC = main.c school.c
+OBJ = main.o school.o
 NAME = school
 
-all: object c_code
+all: main
 
-object: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+main: $(OBJ)
+	$(CC) main.o school.o -o $(NAME)
 
 c_code: $(SRC)
 	$(CC) -c $(SRC)
