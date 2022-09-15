@@ -8,10 +8,7 @@ CC = gcc
 
 SRC = *.c
 
-all: object c_code
+all: object
 
-object: school.o main.o
-	$(CC) school.o main.o -o school
-
-c_code: school.c main.c
-	$(CC) $(SRC)
+object: school.c main.c
+	$(CC) $(SRC) -o school
