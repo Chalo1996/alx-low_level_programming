@@ -1,0 +1,17 @@
+#Usage:
+#all #build object c_code
+#object #build the executable
+#CC #gcc recursive expanded variable
+#SRC #All .c files: main.c school.c
+
+CC = gcc
+
+SRC = *.c
+
+all: object c_code
+
+object: school.o main.o
+	$(CC) school.o main.o
+
+c_code: school.c main.c
+	$(CC) $(SRC)
