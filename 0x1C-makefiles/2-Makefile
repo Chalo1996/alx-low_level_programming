@@ -6,8 +6,6 @@
 #OBJ #Object files
 #NAME #executable
 
-.PHONY := all main
-
 CC = gcc
 SRC = main.c school.c
 OBJ = main.o school.o
