@@ -1,6 +1,8 @@
-**Low Level Programming with C**</br>
+# Low Level Programming with C
+---
+---
 
-*This folder touches the following areas:*</br>
+###This folder touches the following areas:
 <li>
 Variables</br>
 if</br>
