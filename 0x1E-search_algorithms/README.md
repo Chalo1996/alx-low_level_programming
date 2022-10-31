@@ -24,7 +24,7 @@ Step 6: EXIT
 ```
 ---
 2. __Binary Search__
-   Binary search takes a **f(n) = O(log2n)** time complexity to execute. It suitable for sorted array.
+   Binary search takes a **f(n) = O(log2n)** time complexity to execute. It is suitable for sorted array.
 ```
 BINARY_SEARCH(A, lower_bound, upper_bound, VAL)
 Step 1: [INITIALIZE] SET BEG = lower_bound

@@ -25,10 +25,12 @@
 ##### Twenty first project: 0x14-bit_manipulation
 ##### Twenty second project: 0x15-file_io
 ##### Printf
-##### The Shell Project**
+##### The Shell Project
+#### 0x1E-search_algorithms
 ---
 
 __AUTHOR__:
 
 __Emmanuel Chalo__
+
 [email](https://mail.google.com/mail/emusyoka759@gmail.com "email chalo") ||
