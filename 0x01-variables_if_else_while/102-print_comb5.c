@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int i, j, mantisa_i, characteristic_i, mantisa_j, characteristic_j;
+	int i, j, mantisa_i, decimal_i, mantisa_j, decimal_j;
 
 	for (i = 0; i <= 99; i++)
 	{
@@ -17,13 +17,13 @@ int main(void)
 		{
 			mantisa_i = i / 10;
 			mantisa_j = j / 10;
-			characteristic_i = i % 10;
-			characteristic_j = j % 10;
+			decimal_i = i % 10;
+			decimal_j = j % 10;
 			putchar(mantisa_i + '0');
-			putchar(characteristic_i + '0');
+			putchar(decimal_i + '0');
 			putchar(32);
 			putchar(mantisa_j + '0');
-			putchar(characteristic_j + '0');
+			putchar(decimal_j + '0');
 			if ((i != 0 || i != 1) && i != 98)
 			{
 				putchar(44);
