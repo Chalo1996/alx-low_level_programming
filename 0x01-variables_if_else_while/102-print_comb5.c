@@ -1,34 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - The Entrypoint for C code.
+ * main - The Entrypoint for C code. This algorithm is used/
+ *        to find a two two-digit combination
  *
  * Return: The Endpoint for C code.
  */
 
 int main(void)
 {
-	int i = 48, j = 0, k, l = 44;
+	int i, j, mantisa_i, characteristic_i, mantisa_j, characteristic_j;
 
-	while (j <= 99)
+	for (i = 0; i <= 99; i++)
 	{
-		k = j + 1;
-		while (k <= 99)
+		for (j = i + 1; j <= 99; j++)
 		{
-			putchar((j / 10) + i);
-			putchar((j % 10) + i);
+			mantisa_i = i / 10;
+			mantisa_j = j / 10;
+			characteristic_i = i % 10;
+			characteristic_j = j % 10;
+			putchar(mantisa_i + '0');
+			putchar(characteristic_i + '0');
 			putchar(32);
-			putchar((k / 10) + i);
-			putchar((k % 10) + i);
-			if (j != 98 || k != 99)
+			putchar(mantisa_j + '0');
+			putchar(characteristic_j + '0');
+			if ((i != 0 || i != 1) && i != 98)
 			{
-				putchar(l);
+				putchar(44);
 				putchar(32);
 			}
-			k += 1;
 		}
-		j += 1;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
