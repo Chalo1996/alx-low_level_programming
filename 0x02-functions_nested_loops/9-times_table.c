@@ -1,30 +1,41 @@
 #include "main.h"
 
 /**
- * times_table - Prints the multiplication table of 9.
- */
+  * times_table - Prints the multiplication table of 9.
+  *
+  * Return - Nothing(void).
+  */
+
 void times_table(void)
 {
-	int i, j, k;
+	int i, j, res, res_mantissa, res_char;
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar('0');
-
-		for (j = 1; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			res = i * j;
 
-			k = i * j;
+			if (j != 0 && j != '9' + 1)
+			{
+				_putchar(44);
+				_putchar(32);
+			}
 
-			if (k <= 9)
-				_putchar(' ');
+			if (res <= 9)
+			{
+				_putchar(32);
+				_putchar(res + '0');
+			}
 			else
-				_putchar((k / 10) + '0');
+			{
+				res_mantissa = res / 10;
+				res_char = res % 10;
+				_putchar(res_mantissa + '0');
+				_putchar(res_char + '0');
+			}
 
-			_putchar((k % 10) + '0');
 		}
-		_putchar('\n');
+		_putchar(10);
 	}
 }
