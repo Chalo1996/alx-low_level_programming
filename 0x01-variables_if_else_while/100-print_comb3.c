@@ -15,7 +15,6 @@ int main(void)
 		{
 			if (i == j)
 				continue;
-			
 			if (i != 57)
 			{
 				putchar(i);
@@ -29,6 +28,5 @@ int main(void)
 		}
 	}
 	putchar(10);
-	
 	return (0);
 }
