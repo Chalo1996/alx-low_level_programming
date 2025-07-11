@@ -13,6 +13,9 @@ int main(void)
 	{
 		for (j = i; j <= 57; j++)
 		{
+			if (i == j)
+				continue;
+			
 			if (i != 57)
 			{
 				putchar(i);
