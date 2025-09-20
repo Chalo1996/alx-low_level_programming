@@ -12,15 +12,20 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int count;
+	int i;
 
-	while (*(src + i))
+	count = 0;
+
+	while (*(src + count))
 	{
-		*(dest + i) = *(src + i);
-		i++;
+		count++;
 	}
 
-	*(dest + i) = '\0';
+	for (i = 0; i < count + 1; i++)
+	{
+		*(dest + i) = *(src + i);
+	}
 
 	return (dest);
 }
