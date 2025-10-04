@@ -5,9 +5,9 @@
 
 /**
  * _atoi - converts an ascii to its integer equivalent.
- * @s: poniter to string.
+ * @s: pointer to string.
  *
- * Return: interger converted from ascii or 0 if non.
+ * Return: integer converted from ascii or 0 if non.
  */
 int _atoi(char *s)
 {
@@ -38,7 +38,7 @@ int _atoi(char *s)
 	for (i = size; s[i] && (s[i] >= '0' && s[i] <= '9'); ++i)
 		num = num * 10 + (s[i] - '0');
 
-	for (j = size - 1; j >= 0 && (s[j] == '+' || s[j] == '-'); --j)
+	for (j = 0; j < size; j++)
 	{
 		if (s[j] == '-')
 			++minus_count;
