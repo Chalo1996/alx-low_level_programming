@@ -23,7 +23,7 @@ int _atoi(char *s)
 	/* find index of first digit */
 	while (s[i])
 	{
-		if (isdigit((unsigned char)s[i]))
+		if (s[i] >= '0' && s[i] <= '9')
 		{
 			state = ISDIGIT;
 			break;
@@ -35,7 +35,7 @@ int _atoi(char *s)
 	if (state == NODIGIT)
 		return (0);
 
-	for (i = size; s[i] && isdigit((unsigned char)s[i]); ++i)
+	for (i = size; s[i] && (s[i] >= '0' && s[i] <= '9'); ++i)
 		num = num * 10 + (s[i] - '0');
 
 	for (j = size - 1; j >= 0 && (s[j] == '+' || s[j] == '-'); --j)
