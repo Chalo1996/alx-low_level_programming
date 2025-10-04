@@ -1,28 +1,52 @@
 #include "main.h"
 
+#define NODIGIT 0
+#define ISDIGIT 1
+
 /**
- * _atoi - converts a string to an integer
- * @s: string to conveirt
+ * _atoi - converts an ascii to its integer equivalent.
+ * @s: poniter to string.
  *
- * Return: integer
+ * Return: interger converted from ascii or 0 if non.
  */
 int _atoi(char *s)
 {
-	int i, j, k, l;
+	int minus_count = 0;
+	int plus_count = 0;
+	int size = 0;
+	int i = 0;
+	int j = 0;
+	int state = NODIGIT;
+	int num = 0;
+	int sign = 1;
 
-	i = k = 0;
-	l = 1;
-	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
+	/* find index of first digit */
+	while (s[i])
 	{
-		if (*(s + i) == '-')
-			l *= -1;
-		i++;
+		if (isdigit((unsigned char)s[i]))
+		{
+			state = ISDIGIT;
+			break;
+		}
+		++size;
+		++i;
 	}
-	j = i;
-	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
+
+	if (state == NODIGIT)
+		return (0);
+
+	for (i = size; s[i] && isdigit((unsigned char)s[i]); ++i)
+		num = num * 10 + (s[i] - '0');
+
+	for (j = size - 1; j >= 0 && (s[j] == '+' || s[j] == '-'); --j)
 	{
-		k = k * 10 + l * (*(s + j) - '0');
-		j++;
+		if (s[j] == '-')
+			++minus_count;
+		else
+			++plus_count;
 	}
-	return (k);
+
+	sign = (minus_count % 2) ? -1 : 1;
+
+	return (sign * num);
 }
