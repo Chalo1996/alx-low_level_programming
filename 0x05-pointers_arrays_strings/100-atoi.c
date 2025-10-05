@@ -1,8 +1,5 @@
 #include "main.h"
 
-#define NODIGIT 0
-#define ISDIGIT 1
-
 /**
  * _atoi - converts an ascii to its integer equivalent.
  * @s: pointer to string.
@@ -11,42 +8,21 @@
  */
 int _atoi(char *s)
 {
-	int minus_count = 0;
-	int plus_count = 0;
-	int size = 0;
-	int i = 0;
-	int j = 0;
-	int state = NODIGIT;
-	int num = 0;
-	int sign = 1;
+	int i, j, k, l;
 
-	/* find index of first digit */
-	while (s[i])
+	i = k = 0;
+	l = 1;
+	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
 	{
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			state = ISDIGIT;
-			break;
-		}
-		++size;
-		++i;
+		if (*(s + i) == '-')
+			l *= -1;
+		i++;
 	}
-
-	if (state == NODIGIT)
-		return (0);
-
-	for (i = size; s[i] && (s[i] >= '0' && s[i] <= '9'); ++i)
-		num = num * 10 + (s[i] - '0');
-
-	for (j = 0; j < size; j++)
+	j = i;
+	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
 	{
-		if (s[j] == '-')
-			++minus_count;
-		else
-			++plus_count;
+		k = k * 10 + l * (*(s + j) - '0');
+		j++;
 	}
-
-	sign = (minus_count % 2) ? -1 : 1;
-
-	return (sign * num);
+	return (k);
 }
